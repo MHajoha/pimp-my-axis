@@ -1,0 +1,16 @@
+[Unit]
+Description=Pimp-My-Axis
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+
+User=root
+Group=root
+
+ProtectSystem=full
+ProtectHome=true
+
+ExecStart=/usr/bin/pimp-my-axis
